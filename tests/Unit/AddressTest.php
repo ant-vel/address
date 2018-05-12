@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Antvel\Address\Tests\Unit;
+namespace Antvel\Tests\Unit;
 
 use Antvel\Address\Tests\TestCase;
 

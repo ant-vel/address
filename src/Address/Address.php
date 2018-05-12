@@ -45,13 +45,6 @@ class Address extends Model implements AddressContract
     protected $hidden = ['id'];
 
     /**
-     * The default relations.
-     *
-     * @var array
-     */
-    protected $with = ['user'];
-
-    /**
      * The attributes that should be cast to native types.
      *
      * @var array
@@ -66,4 +59,9 @@ class Address extends Model implements AddressContract
      * @var array
      */
     protected $dates = ['created_at', 'updated_at', 'deleted_at'];
+
+    public function addressable()
+    {
+        $this->morphTo();
+    }
 }

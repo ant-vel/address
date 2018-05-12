@@ -43,7 +43,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Antvel\\Address\\Tests\\": "tests"
+            "Antvel\\Tests\\": "tests"
         },
         "classmap": [
             "tests/TestCase.php"
@@ -55,7 +55,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Antvel\\AntvelServiceProvider"
+                "Antvel\\Address\\AddressServiceProvider"
             ]
         }
     },

@@ -42,10 +42,7 @@ trait Environment
      */
     protected function getEnvironmentSetUp($app)
     {
-        // $app['config']->set('auth.providers.users.model', \Antvel\Users\Models\User::class);
         $app['config']->set('app.key', $this->generateRandomKey($app));
-        // $app['path.lang'] = $this->getFixturesDirectory('lang');
-        // $app['path.storage'] = __DIR__ . '/../../storage';
     }
 
     /**
@@ -61,18 +58,6 @@ trait Environment
             $app['config']['app']['cipher'] == 'AES-128-CBC' ? 16 : 32
         ));
     }
-
-    /**
-     * Load the translations files.
-     *
-     * @param  string $path
-     *
-     * @return string
-     */
-    // public function getFixturesDirectory(string $path): string
-    // {
-    //     return __DIR__ . "/../../resources/{$path}";
-    // }
 
     /**
      * Get package service providers.
